@@ -47,18 +47,30 @@
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="{% url 'home' %}">Mantas Misiunas</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ml-auto">
-          <a class="nav-item nav-link" href="https://www.linkedin.com/in/mantas-misi%C5%ABnas-964331162/">LinkedIn</a>
-          <a class="nav-item nav-link" href="{% url 'allblogs' %}">Blog</a>
-          <a class="nav-item nav-link" href="{% static 'CV Mantas.pdf' %}">Resume</a>
+    <a class="navbar-brand" href="{% url 'home' %}">Mantas Misiunas</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'allblogs' %}">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% static 'CV Mantas.pdf' %}">Resume</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Social
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="https://www.linkedin.com/in/mantas-misi%C5%ABnas-964331162/">Linkedin</a>
+          <a class="dropdown-item" href="https://www.facebook.com/mantas.misiunas.77/">Facebook</a>
         </div>
-      </div>
-    </nav>
+      </li>
+    </ul>
+  </div>
+</nav>
 </header>
 
 <main role="main">

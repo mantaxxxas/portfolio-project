@@ -19,10 +19,10 @@
 <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
 <link rel="manifest" href="/docs/4.5/assets/img/favicons/manifest.json">
-<link rel="mask-icon" href="/docs/4.5/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+<link rel="mask-icon" href="/docs/4.5/assets/img/favicons/safari-pinned-tab.svg" color="#8575EC">
 <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon.ico">
 <meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
-<meta name="theme-color" content="#563d7c">
+<meta name="theme-color" content="#8575EC">
 
 
     <style>
@@ -46,27 +46,27 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="{% url 'home' %}">Mantas Misiunas</a>
+      <nav class="navbar navbar-expand-lg navbar navbar-light" style="background-color: #8575EC">
+    <a class="navbar-brand ml-4" href="{% url 'home' %}">Mantas Misiunas</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav ml-auto">
+    <ul class="navbar-nav ml-auto mr-3">
       <li class="nav-item">
         <a class="nav-link" href="{% url 'allblogs' %}">Blog</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{% static 'CV Mantas.pdf' %}">Resume</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Social
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="https://www.linkedin.com/in/mantas-misi%C5%ABnas-964331162/">Linkedin</a>
+          <a class="dropdown-item" href="https://www.linkedin.com/in/mantas-misi%C5%ABnas-964331162/">LinkedIn</a>
           <a class="dropdown-item" href="https://www.facebook.com/mantas.misiunas.77/">Facebook</a>
         </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% static 'CV Mantas.pdf' %}">Resume</a>
       </li>
     </ul>
   </div>
@@ -78,9 +78,9 @@
   <section class="jumbotron text-center">
     <div class="container">
       <h1>Hi, I'm Mantas</h1>
-      <p class="lead text-muted">I specialise in Website development, programing and computer hardaware. Need a new a website? New computer? Old one does not work like it used to? I got you covered! Check my earlier works down below.</p>
+      <p class="lead text-muted">I specialise in Website development, programming and computer hardware. Need a new website? A new computer? Old one does not work like it used to? I got you covered! Check my earlier works down below.</p>
       <p>
-        <a href="mailto:mantas.misiunas1212@gmail.com" class="btn btn-primary my-2">Email Me!</a>
+        <a href="mailto:mantas.misiunas1212@gmail.com" class="btn btn-primary my-2" style="background-color: #8575EC;">Email Me!</a>
       </p>
       <img src="{% static 'cv.jpg' %}" height="300" />
     </div>
